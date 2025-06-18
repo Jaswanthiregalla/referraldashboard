@@ -1,0 +1,40 @@
+.wrapper {
+  margin: 2rem 0;
+}
+.heading {
+  color: #333;
+  margin-bottom: 1rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.box {
+  flex: 1;
+}
+.inputRow {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.copyBtn {
+  background: linear-gradient(348.62deg, #4776E6 10%, #8E54E9 100%);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}

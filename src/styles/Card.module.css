@@ -1,0 +1,38 @@
+
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+  
+ 
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, #6f5af0 0%, #8f59ff 50%, #5c82ff 100%);
+  color: #fff;
+  border-radius: 8px;
+  padding: 1.25rem;
+  
+  height: 80px;
+  width: 200px;
+  
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card p {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}

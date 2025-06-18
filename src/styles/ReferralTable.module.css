@@ -1,0 +1,77 @@
+.wrapper {
+  margin-top: 2rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.searchBox {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+.tableWrapper {
+  overflow-x: auto;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+.table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(to right, #7f5af0, #5c82ff);
+  color: white;
+}
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.pagination {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.pagination button {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.pagination .active {
+  background: #7f5af0;
+  color: white;
+  border-color: #7f5af0;
+}
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .table {
+    font-size: 0.85rem;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
