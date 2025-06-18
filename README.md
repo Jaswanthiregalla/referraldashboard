@@ -28,6 +28,7 @@ A React-based referral dashboard with reusable component architecture, routing w
 ### 5. **Referral Overview and Link**
 - Allows users to share their unique referral link and referral code.
 - **Prefilled Input Fields**: Referral URL (`https://gobusiness.com/?referral=ABCXYZ`) and referral code (`ABCXYZ`) are shown in read-only input fields.
+- **Copy Functionality**: By clicking the copy icon copies the referral code or link to the clipboard and shows an alert confirming the action.
 
 ### 6. **Responsive UI**
 - Styled using **CSS Modules**.
