@@ -12,7 +12,7 @@ A React-based referral dashboard with reusable component architecture, routing w
 - Simple client-side validation using `useState`.
 - Only allows:
   - **Username**: admin
-  - **Password**: admin@2021
+  - **Password**: admin@2025
 - Redirects to `/dashboard` after successful login.
 
 ### 3. **Component-Based Design**
