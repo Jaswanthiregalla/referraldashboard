@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import styles from "../styles/ReferralTable.module.css";
 import data from "../data/referralData.json";
 
-function ReferralTable({ searchTerm }) {
-  const itemsPerPage = 10;
+function ReferralTable() {
+  const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
   const filteredData = data.filter((row) =>
     row.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -23,11 +24,17 @@ function ReferralTable({ searchTerm }) {
         <span>
           Show <input type="number" value={itemsPerPage} disabled /> Entries
         </span>
+
+        {/* ✅ This is your working search input */}
         <input
-          type="text"
-          placeholder="Search..."
+          type="search"
+          placeholder="Search by name..."
           className={styles.searchBox}
-          onChange={(e) => setCurrentPage(1)}
+          value={searchTerm}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+            setCurrentPage(1); // Reset to first page on new search
+          }}
         />
       </div>
 
@@ -63,13 +70,13 @@ function ReferralTable({ searchTerm }) {
           <button onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}>
             Previous
           </button>
-          {[...Array(totalPages)].map((_, idx) => (
+          {[...Array(totalPages)].map((_, id) => (
             <button
-              key={idx}
-              onClick={() => setCurrentPage(idx + 1)}
-              className={currentPage === idx + 1 ? styles.active : ""}
+              key={id}
+              onClick={() => setCurrentPage(id + 1)}
+              className={currentPage === id + 1 ? styles.active : ""}
             >
-              {idx + 1}
+              {id + 1}
             </button>
           ))}
           <button

@@ -10,7 +10,7 @@ function LoginPage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === "admin" && password === "admin@2021") {
+    if (username === "admin" && password === "admin@2025") {
       navigate("/dashboard");
     } else {
       setError("Invalid credentials");

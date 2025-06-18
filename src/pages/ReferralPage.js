@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import ReferralOverview from "../components/ReferralOverview";
@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import styles from "../styles/ReferralPage.module.css";
 
 function ReferralPage() {
-  const [searchTerm, setSearchTerm] = useState("");
   return (
     <div>
       <Navbar />
@@ -16,7 +15,7 @@ function ReferralPage() {
         <Card />
         <ReferralOverview />
         <ReferralLink />
-        <ReferralTable searchTerm={searchTerm} />
+        <ReferralTable />
       </div>
       <Footer />
     </div>

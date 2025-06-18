@@ -29,6 +29,7 @@ function Navbar() {
           <div className={styles.searchBox}>
             <FiSearch className={styles.searchIcon} />
             <input
+              type="search"
               className={styles.searchInput}
               placeholder="Search here..."
             />
