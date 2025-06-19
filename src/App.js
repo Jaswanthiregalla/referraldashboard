@@ -4,7 +4,7 @@ import DashboardPage from "./pages/ReferralPage"; // your referral dashboard
 import LoginPage from "./pages/LoginPage";
 function App() {
   return (
-    <Router>
+    <Router basename="/referraldashboard">
       <Routes>
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/login" element={<LoginPage />} />
